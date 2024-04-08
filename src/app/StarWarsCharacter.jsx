@@ -22,7 +22,7 @@ export default function StarWarsCharacter() {
     }
     fetchCharacter(1, setCharacter);
     fetchCharacter(2, setCharacter2);
-    // fetchCharacter(3, setCharacter);
+    fetchCharacter(5, setCharacter);
   }, []);
 
   if (loading) {
@@ -31,6 +31,13 @@ export default function StarWarsCharacter() {
 
   return (
     <>
+      <div>
+        <h1>{character.name}</h1>
+        <p>Height: {character.height}</p>
+        <p>Mass: {character.mass}</p>
+        <p>Hair Color: {character.hair_color}</p>
+      </div>
+
       <div>
         <h1>{character.name}</h1>
         <p>Height: {character.height}</p>
