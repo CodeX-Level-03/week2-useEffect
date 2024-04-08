@@ -5,6 +5,7 @@ export default function Home() {
     <main>
       <h1>Star Wars Character</h1>
       
+
       <StarWarsCharacter />
 
       
